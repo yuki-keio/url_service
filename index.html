@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="icon.png">
+<script type="text/javascript" src="./jl/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./jl/mm.1.0.js"></script>
+<script type="text/javascript" src="./jl/shortcut.js"></script>
+<link rel="stylesheet" href="./master.css">
+<script type="text/javascript" src="./main.js"></script>
+
+  <meta charset="utf-8">
+    <title>日本語URL変換サイト</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>日本語URL・変換サイト</h1>
+      <p id="explain">日本語や特殊な記号を含むURLは、X(旧Twitter）やメールなどでリンクとして認識されないことがあります。このツールを使うと、そのようなURLを変換(エンコード)してリンクとして使えるようにできます。</p>
+      
+      <div class="section">
+        <h4>日本語URLを入力</h4>
+        <textarea id="inputarea" rows="8" placeholder="例: https://ja.wikipedia.org/wiki/日本語" autofocus></textarea>
+      </div>
+      
+      <div class="checkbox-container">
+        <input type="checkbox" id="copy" value="" checked>
+        <span>置換後の文字列を自動コピー</span>
+      </div>
+
+      <div class="section">
+        <h4>URLの変換結果</h4>
+        <textarea id="outputarea" rows="8" placeholder="変換されたURLがここに表示されます" readonly></textarea>
+      </div>
+
+      <div class="services-section">
+        <h3>管理人が開発している他のサービス（抜粋）</h3>
+        <ul>
+          <li>
+            <a href="https://regex.yuki-lab.com/">正規表現も使える文字列検索・置換サイト</a>
+            プログラミングや執筆などに便利です
+          </li>
+          <li>
+            <a href="https://web.sfc.keio.ac.jp/~t21055yi/quote/">HTMLで書かれた文章をString型の文字列に変換</a>
+            コーディング作業を効率化
+          </li>
+          <li>
+            <a href="http://reversi.yuki-lab.com/ai">リバーシWeb | 無料で遊べるオセロゲーム</a>
+            AI対戦や友達対戦などの機能がある人気サービスです
+          </li>
+          <li>
+            <a href="https://web.sfc.keio.ac.jp/~t21055yi/timer/">コマンド操作も可能な高性能タイマー</a>
+            作業効率アップに最適
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

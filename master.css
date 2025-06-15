@@ -1,0 +1,210 @@
+
+/* リセット・ベーススタイル */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* コンテナ */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* ヘッダー */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#explain {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  padding: 0 20px;
+}
+
+/* セクション */
+.section {
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h4::before {
+  content: "🔗";
+  font-size: 1.1rem;
+}
+
+h4:last-of-type::before {
+  content: "✨";
+}
+
+/* テキストエリア */
+textarea {
+  width: 100%;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+  resize: vertical;
+  min-height: 120px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  background: #fff;
+}
+
+textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* チェックボックス */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 12px;
+  background: #f7fafc;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+}
+
+.checkbox-container span {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+/* 他サービスセクション */
+.services-section {
+  margin-top: 40px;
+  padding-top: 30px;
+  border-top: 2px solid #e2e8f0;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #4a5568;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 15px;
+}
+
+li {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: #e6fffa;
+  border-color: #38b2ac;
+  transform: translateX(5px);
+}
+
+li a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+li a:hover {
+  color: #553c9a;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #explain {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+}
+
+/* 旧スタイルとの互換性 */
+span.yellow {
+  background-color: #fef5e7;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.screen {
+  max-height: 80px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+#ad {
+  width: 100%;
+}
+
+.small {
+  font-size: small;
+}

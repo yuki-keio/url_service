@@ -1,1 +1,3 @@
-# url_service
+日本語urlをエンコードするサービスです。
+
+https://encode.yuki-lab.com
